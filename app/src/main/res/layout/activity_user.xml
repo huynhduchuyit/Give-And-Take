@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".UserActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabBaiDangCuaToi_User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bài đăng của tôi"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabYeuCauDaGui_User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yêu cầu đã gửi"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <ListView
+        android:id="@+id/lvwPost_User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>
